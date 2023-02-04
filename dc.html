@@ -1,0 +1,76 @@
+<head>
+    <script src="dc_script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<style>
+body {
+    background-image: url("img/pexels-cottonbro-studio-9862516.jpeg");
+    background-size: cover;
+    color: #e5e5e5;
+    font-family: "Arial", sans-serif;
+}
+
+#options {
+    background-color: rgba(155, 140, 117, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #000000;
+}
+
+#outcome {
+    background-color: rgba(155, 140, 117, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #000000;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    background-color: #282828;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="button"] {
+    background-color: #9b8c75;
+    color: #282828;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px #000000;
+    align-content: center;
+}
+
+#title{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+
+
+</style>  
+
+
+</head>
+  <body>
+    <form>
+      <label for="user-input">What would you like to do?</label>
+      <input type="text" id="user-input" name="user-input">
+      <input type="button" value="Submit" onclick="handleInput()">
+    </form>
+    <div id="description"></div>
+    <div id="options"></div>
+    <div id="outcome"></div>
+<script>
+    $(document).ready(function() {
+  gameLoop();
+});
+
+</script>
+</body>
+
+
